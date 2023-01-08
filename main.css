@@ -1,0 +1,382 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: NothingYouCouldDo;
+    src: url(fonts/ZenMaruGothic-Regular.ttf);
+}
+
+@font-face {
+    font-family: montserrat_regular;
+    src: url(fonts/Montserrat-Regular.ttf);
+}
+
+body {
+    min-width: 320px;
+}
+
+header {
+    width: 100%;
+    background-color:white;
+    position: fixed;
+    z-index: 3;
+    min-width: 320px;
+    opacity: 0.8;
+}
+
+.header-wrapper {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    width: 70%;
+    margin: 0 auto;
+    min-width: 275px;
+}
+
+.header-wrapper nav a {
+    text-decoration: none;
+    padding-left: 20px;
+    color: black;
+    transition: 0.3s;
+}
+
+.header-wrapper nav a:hover {
+    text-decoration: none;
+    padding-left: 20px;
+    color: rgb(255, 196, 87);
+   
+}
+
+.logo a {
+    color: black;
+    font-size: 24px;
+    text-decoration: none;
+    align-items: center;
+}
+
+.top-section {
+    position: relative;
+    background: url(img/background.webp) no-repeat center center;
+    background-size: cover;
+    
+}
+
+.top-section::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.1);
+    z-index: 1;
+}
+
+.top-section .main-wrapper {
+    position: relative;
+    margin: 0 auto;
+    /* width: 50%; */
+    color: white;
+    padding: 7% 0 35% 0;
+    padding-bottom: auto;
+    text-align: center;
+    min-width: 260px;
+    z-index: 2;
+}
+
+.top-section .main-wrapper h1 {
+    font-family: NothingYouCouldDo;
+    font-weight: lighter;
+    padding: 2% 0 4% 0;
+    font-size: 76px;
+}
+
+.top-section .main-wrapper h4 {
+    font-weight: lighter;
+    font-size: 28px;
+}
+
+
+.conception {
+    font-family: montserrat_regular;
+    line-height: 30px;
+    padding-top: 10%;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.conception-content {
+    margin-left: 10%;
+    width: 300px;
+    color: white;
+}
+
+.conception-img {
+    width: 50%;
+}
+
+.conception-img img {
+    width: 100%;
+}
+
+.conception-content h3 {
+    font-weight: lighter;
+    padding: 15% 0 20% 0;
+}
+
+.services-title {
+    margin: 7% 0 0 8%;
+    padding-left: 2%;
+    width: 30%;
+    border-left: 1px solid rgba(0,0,0,.2);
+}
+
+.services-title h4 {
+    font-weight: lighter;
+}
+
+.services-title h3 {
+    font-weight: lighter;
+    margin-top: 5%;
+    font-size: 28px;
+}
+
+.services-content-wrapper {
+    display: flex;
+    width: 100%;
+}
+
+.services-content:nth-child(odd) {
+    padding: 10% 0 0 10%;
+    width: 40%;
+}
+
+.services-content:nth-child(odd) h1 {
+    font-weight: lighter;
+    font-size: 32px;
+}
+
+.services-content:nth-child(odd) p {
+    margin: 12% 0 10% 0;
+    font-size: 26px;
+}
+
+.services-content:nth-child(even) {
+    padding: 10% 10% 0 0;
+}
+
+.services-content:nth-child(even) h1 {
+    font-weight: lighter;
+    font-size: 32px;
+}
+
+.services-content:nth-child(even) p {
+    margin: 12% 0 10% 0;
+    font-size: 26px;
+}
+
+.services-content {
+    width: 40%;
+}
+
+.services-img {
+    width: 60%;
+}
+
+.services-img img {
+    width: 100%;
+}
+
+.why {
+    background: url(img/background.webp) no-repeat center center;
+    background-size: cover;
+    padding: 10% 0;
+}
+
+.why-block {
+    width: 30%;
+    background-color: black;
+    border-radius: 15px;
+    margin-left: 10%;
+    padding: 5% 3%;
+}
+
+.why-wrapper {
+    color: white;
+    padding-left: 10%;
+    border-left: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+.why-wrapper h4 {
+    font-weight: lighter;
+}
+
+.why-wrapper h2 {
+    font-weight: lighter;
+    font-size: 32px;
+    margin: 15% 0 25% 0;
+}
+
+.why-wrapper p {
+    margin-bottom: 15%;
+    font-size: 24px;
+}
+
+.statistics {
+    display: flex;
+    font-family: montserrat_regular;
+    line-height: 30px;
+}
+
+.statistics-img {
+    width: 60%;
+}
+
+.statistics-img img {
+    width: 100%;
+}
+
+.statistics-content {
+    width: 40%;
+    margin-top: 15%;
+}
+
+.statistics-item-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(50%, 1fr));
+}
+
+.statistics-item {
+    padding: 25% 20% 0 0;
+}
+
+.partners {
+    width: 100%;
+    font-family: montserrat_regular;
+    line-height: 30px;
+    padding: 10%;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.partners-content {
+    width: 300px;
+    color: white;
+}
+
+.partners-content h3 {
+    font-weight: lighter;
+    padding: 15% 0 20% 0;
+}
+
+.partners-list {
+    width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.partners-list-item {
+    margin-bottom: 40px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    height: 210px;
+}
+
+.partners-list-item div {
+    margin: 0 auto;
+    height: 175px;
+    width: 175px;
+}
+
+.partners-list-item div img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.partners-list-item h2 {
+    margin-top: auto;
+    color: white;
+}
+
+.footer-wrapper {
+    font-family: montserrat_regular;
+    margin: 90px 0 0 14%;
+}
+
+.footer-logo {
+    color: black;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.footer-main {
+    padding-top: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacts {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacts-link {
+    display: flex;
+    flex-direction: column;
+    margin-right: 100px;
+}
+
+.contacts-link a, .contacts-info p {
+    margin-bottom: 50px;
+    text-decoration: none;
+    color: black;
+}
+
+.subscribe {
+    margin-right: 18%;
+}
+
+.subscribe h2 {
+    font-weight: lighter;
+    font-size: 24px;
+}
+
+.subscribe p {
+    margin-top: 50px;
+}
+
+.subscribe-input {
+    display: flex;
+}
+
+.subscribe-input input {
+    outline: none;
+    height: 30px;
+}
+
+.social-copirights-wrapper {
+    margin: 140px 5% 30px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.socials {
+    width: 200px;
+}
+
+.socials a {
+    margin-left: 10%;
+}
+
+
+
+
+
