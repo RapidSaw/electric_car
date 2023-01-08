@@ -152,7 +152,7 @@ header {
 }
 
 .services-content:nth-child(odd) {
-    padding: 10% 0 0 10%;
+    padding: 5% 0 0 10%;
     width: 40%;
 }
 
@@ -167,7 +167,7 @@ header {
 }
 
 .services-content:nth-child(even) {
-    padding: 10% 10% 0 0;
+    padding: 5% 10% 0 0;
 }
 
 .services-content:nth-child(even) h1 {
@@ -193,22 +193,23 @@ header {
 }
 
 .why {
-    background: url(img/background.webp) no-repeat center center;
+    background: url(img/car-factory.jpg) no-repeat center center;
     background-size: cover;
     padding: 10% 0;
 }
 
 .why-block {
     width: 30%;
+    min-width: 320px;
     background-color: black;
     border-radius: 15px;
     margin-left: 10%;
-    padding: 5% 3%;
+    padding: 70px 40px;
 }
 
 .why-wrapper {
     color: white;
-    padding-left: 10%;
+    padding-left: 25px;
     border-left: 1px solid rgba(255, 255, 255, 0.7);
 }
 
