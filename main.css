@@ -14,6 +14,38 @@
     src: url(fonts/Montserrat-Regular.ttf);
 }
 
+.link-button {
+    display: block;
+    font-family: montserrat_regular;
+    position: relative;
+    height: 40px;
+    width: 160px;
+    border: 1px solid gray;
+    border-radius: 10px 0 0 10px;
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    padding-top: 8px;
+    transition: 0.3s;
+}
+
+.link-button:hover {
+    background-color: lightgray;
+}
+
+.link-button div {
+    position: absolute;
+    top: -1px;
+    left: 158px;
+    width: 40px;
+    height: 40px;
+    border-radius: 0 10px 10px 0;
+    border: 1px solid gray;
+    background-color: white;
+    background: url(img/Button.PNG) white no-repeat center center;
+}
+
 body {
     min-width: 320px;
 }
@@ -48,7 +80,6 @@ header {
     text-decoration: none;
     padding-left: 20px;
     color: rgb(255, 196, 87);
-   
 }
 
 .logo a {
@@ -62,7 +93,6 @@ header {
     position: relative;
     background: url(img/background.webp) no-repeat center center;
     background-size: cover;
-    
 }
 
 .top-section::after {
@@ -79,7 +109,6 @@ header {
 .top-section .main-wrapper {
     position: relative;
     margin: 0 auto;
-    /* width: 50%; */
     color: white;
     padding: 7% 0 35% 0;
     padding-bottom: auto;
@@ -193,6 +222,7 @@ header {
 }
 
 .why {
+
     background: url(img/car-factory.jpg) no-repeat center center;
     background-size: cover;
     padding: 10% 0;
@@ -224,8 +254,9 @@ header {
 }
 
 .why-wrapper p {
+    font-family: montserrat_regular;
+    font-size: 18px;
     margin-bottom: 15%;
-    font-size: 24px;
 }
 
 .statistics {
@@ -303,8 +334,11 @@ header {
 }
 
 .partners-list-item h2 {
+    font-size: 18px;
+    font-weight: lighter;
     margin-top: auto;
     color: white;
+    text-align: center;
 }
 
 .footer-wrapper {
@@ -356,11 +390,24 @@ header {
 
 .subscribe-input {
     display: flex;
+    position: relative;
 }
 
 .subscribe-input input {
     outline: none;
-    height: 30px;
+    height: 40px;
+    width: 180px;
+    border: 1px solid grey;
+    border-radius: 10px 0 0 10px;
+}
+
+.subscribe-input button {
+    width: 90px;
+    font-family: montserrat_regular;
+    position: relative;
+    left: -1px;
+    border-radius: 0 10px 10px 0;
+    border: 1px solid grey;
 }
 
 .social-copirights-wrapper {
@@ -376,8 +423,3 @@ header {
 .socials a {
     margin-left: 10%;
 }
-
-
-
-
-
